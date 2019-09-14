@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="css/style.css" rel="stylesheet">
+  <title>约吗网官方平台</title>
+</head>
+
+<body>
+  <div class="LargestFrame">
+    <div class="InnerFrame">
+      <h1>约吗网</h1>
+      <div style="font-size: 16px;font-weight: 700">&nbsp;&nbsp;个人信息</div>
+      <hr><br>
+
+      <form name="form1">
+        我的性别:<input type="radio" name="sex" value="male" checked="checked" />男
+        &nbsp; <input type="radio" name="sex" value="female" />女<br><br>
+        出生日期：<input type="text" name="date" /><br><br>
+        原住地区：<input type="text" name="place" value=" 浙江省" />&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="place"
+          value=" 杭州市" /><br><br>
+        婚姻状况:<input type="radio" name="marriage" checked="checked" />未婚 <input type="radio" name="marriage" />离异 <input
+          type="radio" name="marriage" />丧偶<br><br>
+        <label>身高:</label>
+        <select>
+          <option value="">160cm</option>
+          <option value="">170cm</option>
+          <option value="">180cm</option>
+        </select>
+        &nbsp;
+        <label>学历:</label>
+        <select>
+          <option value="">本科及以上</option>
+          <option value="">非本科</option>
+        </select>
+        <br><br>
+        <label>月薪:</label>
+        <select>
+          <option value="">1000-3000</option>
+          <option value="">3000-10000</option>
+          <option value="">10000以上</option>
+        </select>
+        <br><br>
+
+        <table>
+          <tr>
+            <td>自我介绍：</td>
+            <td><input type="checkbox" name="jieshao" />孝顺</td>
+            <td><input type="checkbox" name="jieshao" />独立</td>
+            <td><input type="checkbox" name="jieshao" />简单</td>
+            <td><input type="checkbox" name="jieshao" />阳光</td>
+            <td><input type="checkbox" name="jieshao" />低调</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="checkbox" name="jieshao" />幽默</td>
+            <td><input type="checkbox" name="jieshao" />宅</td>
+            <td><input type="checkbox" name="jieshao" />高大</td>
+            <td><input type="checkbox" name="jieshao" />健康</td>
+            <td><input type="checkbox" name="jieshao" />潮男</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="checkbox" name="jieshao" />胖子</td>
+            <td><input type="checkbox" name="jieshao" />麦霸</td>
+            <td><input type="checkbox" name="jieshao" />工作狂</td>
+            <td><input type="checkbox" name="jieshao" />看书</td>
+            <td><input type="checkbox" name="jieshao" />旅行</td>
+          </tr>
+        </table>
+
+        <br>
+        内心独白：介绍一下你自己，描述一下理想的伴侣，说说你对婚姻的期望<br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="value" value="" style="width: 500px;height: 200px;" />
+      </form>
+      <br><br>
+
+      <div style="font-size: 16px;font-weight: 700">&nbsp;&nbsp;择偶要求</div>
+      <hr><br>
+
+      <form>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 性别 
+        <input type="radio" name="sex" value="male" checked="checked" />男士
+        &nbsp;<input type="radio" name="sex" value="female" />女士<br><br>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 年龄 &nbsp;`
+        <input type="text" name="Min-age" maxlength="10" size="10" />
+        &nbsp;&nbsp;至&nbsp;&nbsp;
+        <input type="text" name="Max-age" maxlength="10" size="10" /><br><br>
+
+        工作地区&nbsp;&nbsp;&nbsp;<input type="text" name="Work-address" maxlength="10" size="10" value="浙江省" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="address" maxlength="10" size="10" value="杭州市" /><br><br>
+
+        婚姻状况&nbsp;&nbsp;<input type="radio" name="marry" value="weihun" checked="checked" />未婚
+        &nbsp;<input type="radio" name="marry" value="liyi" />离异
+        &nbsp;<input type="radio" name="marry" value="sangou" />丧偶<br><br>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        身高&nbsp;&nbsp;&nbsp;
+        <select name="tall">
+          <option value="160" selected>160</option>
+          <option value="170">170</option>
+          <option value="180">180</option>
+        </select>
+        至<select name="tall">
+          <option value="<170" selected>170</option>
+          <option value="180">180</option>
+          <option value="190">190</option>
+        </select><br><br>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        学历&nbsp;&nbsp;&nbsp;
+        <select name="study">
+          <option value="studied" selected>识字</option>
+          <option value="nostudied">不识字</option>
+        </select><br><br>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        月薪&nbsp;&nbsp;&nbsp;
+        <select name="Min-salary">
+          <option value="3000" selected>3000</option>
+          <option value="5000">5000</option>
+          <option value="7000">7000</option>
+          <option value="10000">10000</option>
+        </select>
+        至<select name="Max-salary">
+          <option value="5000" selected>5000</option>
+          <option value="7000">7000</option>
+          <option value="10000">9000</option>
+          <option value="30000">30000</option>
+        </select><br><br>
+
+        &nbsp;&nbsp;&nbsp;
+        婚恋史&nbsp;&nbsp;<input type="radio" name="love" value="wu" checked="checked" />无
+        &nbsp;<input type="radio" name="love" value="yici" />一次
+        &nbsp;<input type="radio" name="love" value="liangshanci" />两三次
+        &nbsp;<input type="radio" name="love" value="duoci" />多次<br><br>
+
+        &nbsp;&nbsp;&nbsp;
+        生子观&nbsp;&nbsp;<input type="radio" name="child" value="wantChild" checked="checked" />想要小孩
+        &nbsp;<input type="radio" name="child" value="notChild" />不要小孩
+        &nbsp;<input type="radio" name="child" value="allOk" />无所谓<br><br>
+
+        <br>&nbsp;&nbsp;&nbsp;
+        <input type="submit" value="提交" />
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
