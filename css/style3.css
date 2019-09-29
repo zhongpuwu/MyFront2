@@ -4,5 +4,16 @@ p#a{
 .bigone{
     color: gray;
     width: 60%;
-    margin: auto;
+    margin: auto;    
+}
+img{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;  /*居中对齐*/
+}
+label{
+    vertical-align: middle;
+}
+td#th{
+    text-align: right;
 }
