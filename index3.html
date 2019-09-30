@@ -17,12 +17,14 @@
             <table cellspacing="15px">
                 <tr>
                     <td id="th">用户名</td>
-                    <td><input type="text" onblur="validate_username(this.value)" onfocus="validate_clear()"></td>
-                    <td id="warning"></td>
+                    <td><input type="text" onblur="validate_username(this.value)" onfocus="validate_clear_id()">
+                    </td>
+                    <td id="warning_id"></td>
                 </tr>
                 <tr>
                     <td id="th">密码</td>
-                    <td><input type="password"></td>
+                    <td><input type="password" onblur="validate_password(this.value)" onfocus="validate_clear_password()"></td>
+                    <td id="warning_password"></td>
                 </tr>
                 <tr>
                     <td id="th">确认密码</td>
