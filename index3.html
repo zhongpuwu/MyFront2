@@ -23,16 +23,18 @@
                 </tr>
                 <tr>
                     <td id="th">密码</td>
-                    <td><input type="password" onblur="validate_password(this.value)" onfocus="validate_clear_password()"></td>
+                    <td><input type="password" id="orign_password" onblur="validate_password(this.value)" onfocus="validate_clear_password()"></td>
                     <td id="warning_password"></td>
                 </tr>
                 <tr>
                     <td id="th">确认密码</td>
-                    <td><input type="password"></td>
+                    <td><input type="password" onblur="validate_password2(this.value)" onfocus="validate_clear_password2()"></td>
+                    <td id="warning_password2"></td>
                 </tr>
                 <tr>
                     <td id="th">关联手机号</td>
-                    <td><input type="text"></td>
+                    <td><input type="text" onblur="validate_Pnumber(this.value)" onfocus="validate_clear_Pnumber()"></td>
+                    <td id="warning_Pnumber"></td>
                 </tr>
                 <tr>
                     <td id="th">手机验证码</td>
