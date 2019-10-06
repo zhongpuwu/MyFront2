@@ -23,23 +23,30 @@
                 </tr>
                 <tr>
                     <td id="th">密码</td>
-                    <td><input type="password" id="orign_password" onblur="validate_password(this.value)" onfocus="validate_clear_password()"></td>
+                    <td><input type="password" id="orign_password" onblur="validate_password(this.value)"
+                            onfocus="validate_clear_password()"></td>
                     <td id="warning_password"></td>
                 </tr>
                 <tr>
                     <td id="th">确认密码</td>
-                    <td><input type="password" onblur="validate_password2(this.value)" onfocus="validate_clear_password2()"></td>
+                    <td><input type="password" onblur="validate_password2(this.value)"
+                            onfocus="validate_clear_password2()"></td>
                     <td id="warning_password2"></td>
                 </tr>
                 <tr>
                     <td id="th">关联手机号</td>
-                    <td><input type="text" onblur="validate_Pnumber(this.value)" onfocus="validate_clear_Pnumber()"></td>
+                    <td><input type="text" onblur="validate_Pnumber(this.value)" onfocus="validate_clear_Pnumber()">
+                    </td>
                     <td id="warning_Pnumber"></td>
                 </tr>
                 <tr>
                     <td id="th">手机验证码</td>
-                    <td><input type="text"></td>
-                    <td><input type="button" title="获取验证码" value="获取验证码"></td>
+                    <td><input type="text" onblur="validate_code(this.value)" onfocus="validate_clear_code()"></td>
+                    <td><input type="button" value="获取验证码" onclick="sendCode(this)"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td id="check_Code"></td>
                 </tr>
                 <tr>
                     <td id="th">保密邮箱</td>
@@ -76,6 +83,9 @@
             <input type="button" value="注册">
         </form>
     </div>
+    
+
+    &#34920;&#31034;&#27492;&#29289;&#20026;1&#21495;&#35270;&#39057;&#30340;1&#65306;1&#22797;&#21046;&#21697;&#12290;
 </body>
 
 </html>
