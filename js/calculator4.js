@@ -1,0 +1,4 @@
+alert();
+function clearly(){
+    alert();
+}
