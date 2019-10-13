@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="ch">
-    <head>
-        <title>究极计算器</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" type="text/css" href="/css/style4.css">
-        <script type="text/javacript" src="/js/calculator4.js"></script>
-    </head>
+
+<head>
+    <title>究极计算器</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="/css/style4.css">
+</head>
+
 <body>
+    <script type="text/JavaScript" src="/js/calculator4.js"></script>
+    <h1>支持连续输入</h1>
     <table cellspacing="20px">
         <tr>
             <td colspan="4">
-                <input type="text" id="l1" readonly value="a">
+                <input type="text" id="l1" readonly value="0">
             </td>
         </tr>
         <tr>
@@ -25,7 +28,7 @@
             <td><input type="button" name="b2" value="7" onclick="TypeIn(this.value)"></td>
             <td><input type="button" name="b2" value="8" onclick="TypeIn(this.value)"></td>
             <td><input type="button" name="b2" value="9" onclick="TypeIn(this.value)"></td>
-            <td><input type="button" name="b1" value="x" onclick="TypeIn(this.value)"></td>
+            <td><input type="button" name="b1" value="*" onclick="TypeIn(this.value)"></td>
         </tr>
         <tr>
             <td><input type="button" name="b2" value="4" onclick="TypeIn(this.value)"></td>
@@ -46,4 +49,5 @@
         </tr>
     </table>
 </body>
+
 </html>
