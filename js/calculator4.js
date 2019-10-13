@@ -1,4 +1,3 @@
-alert();
 function clearly(){
     alert();
 }
