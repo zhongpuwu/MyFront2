@@ -3,8 +3,9 @@ p#a{
 }
 .bigone{
     color: gray;
+    font-size: 20px;
     width: 60%;
-    margin: auto;    
+    margin: auto;
 }
 img{
     width: 20px;
@@ -19,4 +20,16 @@ td#th{
 }
 td#usersType{
     text-align: right;
+}
+#code{
+    background: rgb(206, 206, 206);
+}
+#check_Code,#holder{
+    width: 15em;
+    height: 28px;
+}
+input[type="text"],input[type="password"]{
+    width: 100%;
+    height: 28px;
+    background: rgb(215, 224, 209);
 }

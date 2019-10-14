@@ -152,6 +152,7 @@ function addInput(element) {
 
 //生成验证码
 var code;
+
 function createCode() {
     var expect = 4;
     var str = Math.random().toString(36).substring(2);
@@ -164,7 +165,7 @@ function createCode() {
 
 //验证验证码
 function checkCode(input_number) {
-    var coda = document.getElementById("code").childNodes[0].value;
+    var coda = document.getElementById("code").childNodes[0].innerHTML;
     if (input_number == "") {
         document.getElementById("holder").innerHTML = wrong;
         document.getElementById("holder").innerHTML += '<label>&nbsp;请输入验证码</label>';
@@ -211,28 +212,20 @@ function validate_clear_ycode() {
 }
 
 //点击注册生成报表
-function register(){
-    var content = document.getElementById("content");
+function register() {
+    var contenter = document.getElementById("contenter");
     var user_name = document.getElementsByName("user_name")[0].value;
     var password = document.getElementsByName("password")[0].value;
     var tel = document.getElementsByName("tel")[0].value;
     var tel_code = document.getElementsByName("tel_code")[0].value;
     var email = document.getElementsByName("email")[0].value;
-    var gender = document.getElementsByName("gender")[0].value;
+    var gender = document.getElementsByName("sex")[0].value;
     var user_type = document.getElementsByName("user_type")[0].value;
-    var put_papers = document.getElementsByName("pur_paper");
-    var tmp;
-    for(var i=0;i<put_papers.length;i++){
-        tmp.innerHTML += (put_papers[i].value+"<br>");
+    var uNum = document.getElementsByName("user_number")[0].value;
+    var put_papers = document.getElementsByName("put_paper");
+    var tmp = "";
+    for (var i = 0; i < put_papers.length; i += 1) {
+        tmp += (put_papers[i].value + "<br>");
     }
-    content.innerHTML="<h2>用户注册信息</h2><hr><table><tr><td>用户名：</td><td>"
-    +user_name+"</td></tr><tr><td>密码：</td><td>"
-    +password+"</td></tr><tr><td>关联手机号：</td><td>"
-    +tel+"</td></tr><tr><td>手机验证码：</td><td>"
-    +tel_code+"</td></tr><tr><td>保密邮箱：</td><td>"
-    +email+"</td></tr><tr><td>性别：</td><td>"
-    +gender+"</td></tr><tr><td>用户类型：</td><td>"
-    +user_type+"</td></tr><tr><td>学号：</td><td>"
-    +uNum+"</td></tr><tr><td>注册论文：</td><td>"
-    +put_papers+"</td></tr></table>";
+    contenter.innerHTML = '<h2>用户注册信息</h2><hr><table><tr><td>用户名：</td><td>' + user_name + '</td></tr><tr><td>密码：</td><td>' + password + '</td></tr><tr><td>关联手机号：</td><td>' + tel + '</td></tr><tr><td>手机验证码：</td><td>' + tel_code + '</td></tr><tr><td>保密邮箱：</td><td>' + email + '</td></tr><tr><td>性别：</td><td>' + gender + '</td></tr><tr><td>用户类型：</td><td>' + user_type + '</td></tr><tr><td>学号：</td><td>' + uNum + '</td></tr><tr><td>注册论文：</td><td>' + tmp + '</td></tr></table>';
 }
