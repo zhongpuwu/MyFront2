@@ -52,6 +52,7 @@ function TypeIn(Num) {
             case "+/-":
                 if (!flag_operator) {
                     l1.value *= -1;
+                    a *= -1;
                 } else {
                     b = temp;
                     l1.value = Operate(a, p, b);
