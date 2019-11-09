@@ -7,7 +7,7 @@ var p = "";
 var temp = "";
 
 function TypeIn(Num) {
-    var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+    var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", " 8", "9"];
     var operator = ["+", "-", "*", "/"];
     var l1 = document.getElementById("l1");
     if (numbers.includes(Num)) {
